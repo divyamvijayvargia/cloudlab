@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Divyam Cloud Services</title>
+	<meta name="description" content="Divyam Cloud Services - Fast, secure and scalable cloud solutions for everyone.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container nav-container">
+			<a href="#home" class="logo" aria-label="Divyam Cloud Services Home">
+				<span class="logo-accent">Divyam</span> Cloud Services
+			</a>
+			<button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</button>
+			<nav id="nav" class="nav">
+				<a href="#features">Features</a>
+				<a href="#pricing">Pricing</a>
+				<a href="#about">About</a>
+				<a href="#contact" class="btn btn-small">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="home">
+		<section class="hero reveal">
+			<div class="container hero-inner">
+				<div class="hero-copy">
+					<h1>Build in the cloud with confidence</h1>
+					<p>Secure, scalable and developer-friendly infrastructure. Deploy globally in minutes with transparent pricing and world‑class reliability.</p>
+					<div class="hero-cta">
+						<a href="#pricing" class="btn">View Plans</a>
+						<a href="#features" class="btn btn-ghost">Explore Features</a>
+					</div>
+				</div>
+				<div class="hero-art">
+					<div class="cloud cloud-a"></div>
+					<div class="cloud cloud-b"></div>
+					<div class="cloud cloud-c"></div>
+				</div>
+			</div>
+			<div class="scroll-indicator" aria-hidden="true">Scroll</div>
+		</section>
+
+		<section id="features" class="section reveal">
+			<div class="container">
+				<h2 class="section-title">What we offer</h2>
+				<div class="features-grid">
+					<article class="feature-card">
+						<h3>Compute</h3>
+						<p>Blazing-fast virtual machines and containers with autoscaling and per-second billing.</p>
+					</article>
+					<article class="feature-card">
+						<h3>Storage</h3>
+						<p>Durable object and block storage with cross-region replication and zero maintenance.</p>
+					</article>
+					<article class="feature-card">
+						<h3>Networking</h3>
+						<p>Global CDN, managed DNS and load balancing to keep your apps fast and resilient.</p>
+					</article>
+					<article class="feature-card">
+						<h3>Security</h3>
+						<p>End‑to‑end encryption, DDoS protection and compliance-ready controls out of the box.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="pricing" class="section reveal">
+			<div class="container">
+				<h2 class="section-title">Simple, transparent pricing</h2>
+				<div class="pricing-grid">
+					<article class="price-card">
+						<h3>Starter</h3>
+						<p class="price"><span>$5</span>/mo</p>
+						<ul>
+							<li>1 vCPU • 1 GB RAM</li>
+							<li>25 GB SSD storage</li>
+							<li>1 TB transfer</li>
+							<li>Email support</li>
+						</ul>
+						<a href="#contact" class="btn btn-block">Get Started</a>
+					</article>
+
+					<article class="price-card featured">
+						<div class="badge">Popular</div>
+						<h3>Growth</h3>
+						<p class="price"><span>$20</span>/mo</p>
+						<ul>
+							<li>2 vCPU • 4 GB RAM</li>
+							<li>80 GB SSD storage</li>
+							<li>4 TB transfer</li>
+							<li>Priority support</li>
+						</ul>
+						<a href="#contact" class="btn btn-block">Choose Plan</a>
+					</article>
+
+					<article class="price-card">
+						<h3>Scale</h3>
+						<p class="price"><span>$60</span>/mo</p>
+						<ul>
+							<li>4 vCPU • 16 GB RAM</li>
+							<li>200 GB SSD storage</li>
+							<li>10 TB transfer</li>
+							<li>24/7 support</li>
+						</ul>
+						<a href="#contact" class="btn btn-block">Contact Sales</a>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="section section-alt reveal">
+			<div class="container about">
+				<div class="about-copy">
+					<h2 class="section-title">Why Divyam Cloud?</h2>
+					<p>We combine modern infrastructure with human‑centered support. Our platform is built on renewable energy, delivers industry‑leading uptime, and offers developer tooling that just works.</p>
+					<ul class="ticks">
+						<li>99.99% uptime SLA</li>
+						<li>ISO 27001 & SOC 2 aligned</li>
+						<li>Transparent, predictable billing</li>
+					</ul>
+				</div>
+				<div class="about-media">
+					<div class="orb"></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="section reveal">
+			<div class="container contact">
+				<h2 class="section-title">Get in touch</h2>
+				<form id="contactForm" novalidate>
+					<div class="form-grid">
+						<label>
+							<span>Name</span>
+							<input type="text" name="name" required placeholder="Your name">
+						</label>
+						<label>
+							<span>Email</span>
+							<input type="email" name="email" required placeholder="you@example.com">
+						</label>
+						<label class="full">
+							<span>Message</span>
+							<textarea name="message" rows="4" required placeholder="Tell us about your needs"></textarea>
+						</label>
+					</div>
+					<button type="submit" class="btn">Send message</button>
+					<p id="formStatus" role="status" aria-live="polite" class="form-status" hidden></p>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container footer-inner">
+			<p>© <span id="year"></span> Divyam Cloud Services. All rights reserved.</p>
+			<a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
